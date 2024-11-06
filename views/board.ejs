@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Leaderboard</h1>
+    <p>Top 10 users:</p>
+    <!-- create a table for each user, in each row i want the name and the score -->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+      <% users.forEach( user => {  %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.score %></td>
+        </tr>
+      <% }) %>
+
+  </body>
+</html>
